@@ -79,7 +79,7 @@ function userPrompts() {
 }
 
   // heavy "google-fu" here. Attempt to minimize use of if/else statements to 
-  // reflect the only the user selections and omit the unselected.
+  // reflect only the user selections and omit the unselected.
 function generatePassword(selectionArray, passwordLength) {
     //create a new empty array for new password
     var newPassword = [];
@@ -95,5 +95,9 @@ function generatePassword(selectionArray, passwordLength) {
 }
 
   }
+}
+// Clears text field of previously generated password
+function clearField() {
+  document.getElementById("password").value ="";
 }
 
